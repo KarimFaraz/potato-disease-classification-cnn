@@ -1,15 +1,23 @@
-**Project Overview
-**
+🥔 Project Overview
 
-This project implements a Convolutional Neural Network (CNN) built from scratch to classify potato leaf diseases.
+This project implements a Convolutional Neural Network (CNN) built entirely from scratch to classify potato leaf diseases.
 
-The model is designed without using pre-trained architectures. It includes complete data preprocessing, augmentation, training, evaluation, and model versioning.
+Unlike many image classification projects, this model does not use pre-trained architectures or transfer learning.
+It covers the complete deep learning pipeline including:
 
+Data preprocessing
 
-**Problem Statement
-**
+Data augmentation
 
-To classify potato leaf images into categories such as:
+Model training
+
+Model evaluation
+
+Model versioning
+
+🎯 Problem Statement
+
+The objective is to classify potato leaf images into the following categories:
 
 Early Blight
 
@@ -17,13 +25,11 @@ Late Blight
 
 Healthy
 
-The objective is to build a CNN architecture from scratch and evaluate its performance.
+The goal is to design and evaluate a custom CNN architecture capable of accurately identifying disease classes from raw image inputs.
 
+🧠 Model Architecture
 
-**Model Architecture
-**
-
-The model includes:
+The neural network architecture includes:
 
 Convolutional layers
 
@@ -33,17 +39,15 @@ MaxPooling layers
 
 Flatten layer
 
-Fully connected dense layers
+Fully connected (Dense) layers
 
 Softmax output layer
 
-No transfer learning or pre-trained neural networks were used.
+The model was developed from scratch without leveraging any pre-trained networks.
 
+🔄 Data Preparation & Augmentation
 
-**Data Preparation & Augmentation
-**
-
-To improve generalization and reduce overfitting, the following preprocessing steps were applied:
+To improve generalization and reduce overfitting, the following preprocessing techniques were applied:
 
 Image resizing
 
@@ -59,12 +63,12 @@ Shearing
 
 Validation split
 
-Model Training & Evaluation
+These augmentation techniques helped the model learn more robust features from limited training data.
 
+📊 Model Training & Evaluation
 
 Loss Function: Categorical Crossentropy
-
 Optimizer: Adam
-
 Evaluation Metric: Accuracy
-Training and validation accuracy were tracked across epochs.
+
+Training and validation accuracy were monitored across epochs to evaluate performance and detect overfitting.
